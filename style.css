@@ -64,7 +64,8 @@ body {
   padding: 1.5rem;
   margin: 3rem 0;
   display: grid;
-  gap: 1.5rem;
+  row-gap: 1.5rem;
+  column-gap: 2rem;
 }
 
 .box {
@@ -156,7 +157,7 @@ body {
     grid-template-areas: 
     "one one two five"
     "three four four five";
-    max-width: 1130px;
+    max-width: 1140px;
   }
 
   .one {
@@ -177,5 +178,9 @@ body {
 
   .five {
     grid-area: five;
+  }
+
+  .title {
+    line-height: 1.2;
   }
 }
