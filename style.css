@@ -57,11 +57,14 @@ body {
   font-family: var(--ff-main);
   font-size: var(--fs-body);
   font-weight: var(--fw-medium);
+  background-color: var(--neutral-clr-two);
 }
 
 .container {
   padding: 1.5rem;
   margin: 3rem 0;
+  display: grid;
+  gap: 1.5rem;
 }
 
 .box {
@@ -70,6 +73,7 @@ body {
   display: grid;
   gap: 1rem;
   border-radius: 0.5rem;
+  box-shadow: 0px 10px 30px -20px black;
 }
 
 .one {
@@ -77,6 +81,42 @@ body {
   background-image: url(images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
   background-position: 12rem 0;
+}
+
+.one .picture {
+  border: 2px solid var(--neutral-border-clr);
+}
+
+.two {
+  background-color: var(--primary-rev-bg-clr-two);
+}
+
+.three {
+  background-color: white;
+  color: var(--primary-rev-bg-clr-two);
+  font-weight: var(--fw-semiBold);
+}
+
+.three .name {
+  opacity: 100%;
+}
+
+.four {
+  background-color: var(--primary-rev-bg-clr-three);
+}
+
+.four .picture {
+  border: 2px solid var(--primary-rev-bg-clr-one);
+}
+
+.five {
+  background-color: white;
+  color: var(--primary-rev-bg-clr-two);
+  font-weight: var(--fw-semiBold);
+}
+
+.five .name {
+  opacity: 100%;
 }
 
 .header {
@@ -88,6 +128,16 @@ body {
 .picture {
   width: 2rem;
   border-radius: 50%;
-  border: 2px solid var(--neutral-border-clr);
 }
 
+.name {
+  opacity: 80%;
+}
+
+.verified {
+  opacity: 50%;
+}
+
+.review {
+  opacity: 60%;
+}
