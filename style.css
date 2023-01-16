@@ -80,7 +80,7 @@ body {
   background-color: var(--primary-rev-bg-clr-one);
   background-image: url(images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
-  background-position: 12rem 0;
+  background-position: 90% 0;
 }
 
 .one .picture {
@@ -140,4 +140,42 @@ body {
 
 .review {
   opacity: 60%;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "one one two five"
+    "three four four five";
+    max-width: 1130px;
+  }
+
+  .one {
+    grid-area: one;
+  }
+
+  .two {
+    grid-area: two;
+  }
+
+  .three {
+    grid-area: three;
+  }
+
+  .four {
+    grid-area: four;
+  }
+
+  .five {
+    grid-area: five;
+  }
 }
